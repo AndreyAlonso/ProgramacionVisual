@@ -1,0 +1,60 @@
+Metodos:
+----------------------------------------------------------------------
+SendMessage:
+
+Envia un mensaje especifico a la ventana o ventanas.
+
+LRESULT SendMessage(
+  HWND hWnd,      // Handle de la ventana destino
+  UINT Msg,       // Mensaje a enviar
+  WPARAM wParam,  // Primer parametro del mensaje
+  LPARAM lParam   // Segundo parametro del mensaje
+);
+
+
+Ejemplo de Msg:
+	CB_ADSTRING --> Añanade una cadena a la listbox del combobox
+
+----------------------------------------------------------------------
+
+SendDlgItemMessage:
+
+Envía un mensaje al control especificado en un cuadro de diálogo.
+
+LONG SendDlgItemMessage(
+  HWND hDlg,      // handle del dialog box
+  int nIDDlgItem, // Identificador de Contol
+  UINT Msg,       // Mensaje a enviar
+  WPARAM wParam,  // Primer parametro del mensaje
+  LPARAM lParam   // Segundo parametro del mensaje
+);
+
+
+-----------------------------------------------------------------------
+
+srand:
+
+Establece un punto de partida aleatorio.
+
+
+Se requiere la biblioteca --> <stdlib.h>
+
+
+
+	srand( (unsigned)time( NULL ) );
+
+
+------------------------------------------------------------------------
+
+rand: 
+
+Genera un número pseudoaleatorio.
+
+
+Se requiere la bilbioteca --> <stdlib.h>
+
+
+	x = rand()%100; 
+  "Genera numeros aleatorios entre 0 y 100"
+
+

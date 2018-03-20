@@ -1,0 +1,9 @@
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Mueve_Boton\Mueve_Boton\bin\Debug\Mueve_Boton.exe.config
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\5. Mueve_Boton\Mueve_Boton\bin\Debug\Mueve_Boton.exe.config
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\5. Mueve_Boton\Mueve_Boton\bin\Debug\Mueve_Boton.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\5. Mueve_Boton\Mueve_Boton\bin\Debug\Mueve_Boton.pdb
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\5. Mueve_Boton\Mueve_Boton\obj\Debug\Mueve_Boton.Form1.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\5. Mueve_Boton\Mueve_Boton\obj\Debug\Mueve_Boton.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\5. Mueve_Boton\Mueve_Boton\obj\Debug\Mueve_Boton.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\5. Mueve_Boton\Mueve_Boton\obj\Debug\Mueve_Boton.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\5. Mueve_Boton\Mueve_Boton\obj\Debug\Mueve_Boton.pdb

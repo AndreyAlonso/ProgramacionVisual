@@ -1,0 +1,72 @@
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+	
+		               	M E T O D O S
+
+--------------------------------DialogBox------------------------------------
+
+La macro DialogBox crea un cuadro de diálogo modal de un recurso de plantilla
+de cuadro de diálogo.
+
+
+int DialogBox(
+  HINSTANCE hInstance,  // handle a la instancia de la aplicacion
+  LPCTSTR lpTemplate,   // Identifica la plantilla del cuadro de diálogo
+  HWND hWndParent,      // Handle a la ventana del propietario
+  DLGPROC lpDialogFunc  // Procedimiento del apuntador al cuadro de diálogo
+);
+
+
+Ejemplo:
+
+	DialogBox(hInst, (LPCTSTR)IDD_DIALOG1, hWnd, (DLGPROC)Botones);
+
+
+-----------------------------------------------------------------------------
+--------------------------------SetDlgItemText-------------------------------
+
+Establece el título o el texto de un control en un cuadro de diálogo.
+
+
+BOOL SetDlgItemText(
+  HWND hDlg,         // handle a la caja de dialogo
+  int nIDDlgItem,    // Identificador de control
+  LPCTSTR lpString   // Texto para Establecer
+);
+ 
+
+Ejemplo:
+	SetDlgItemText(hDlg, IDC_EDIT1, "Hola");
+
+-----------------------------------------------------------------------------
+--------------------------------GetDlgItemText-------------------------------
+
+Recupera el título o el texto asociado con un control en un cuadro de diálogo.
+
+
+UINT GetDlgItemText(
+  HWND hDlg,       // handle a la caja de dialogo
+  int nIDDlgItem,  // Identificador de control
+  LPTSTR lpString, // Direccion del buffer para el texto
+  int nMaxCount    // Tamaño maximo de la cadena
+);
+
+Ejemplo:
+	GetDlgItemText(hDlg,IDC_EDIT1,cad1,6);
+
+-----------------------------------------------------------------------------
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+			      
+			       T I P O S
+
+------------------------------DLGPROC----------------------------------------
+
+Apuntador a un procedimiento de devolución de la llamada del cuadro de diálogo 
+definido por la aplicación.
+
+-----------------------------------------------------------------------------
+------------------------------LPCTSTR----------------------------------------
+
+Texto para la caja  de dialogo.
+-----------------------------------------------------------------------------

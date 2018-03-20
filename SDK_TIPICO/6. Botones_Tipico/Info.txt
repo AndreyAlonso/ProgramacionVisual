@@ -1,0 +1,98 @@
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+			M E T O D O S 
+
+------------------------GetDlgItem---------------------------------------
+Recupera el Handle de un control en el cuadro de diálogo especificado.
+
+HWND GetDlgItem(
+  HWND hDlg,       // handle de la caja de dialogo
+  int nIDDlgItem   // Identificador de control
+);
+
+Ejemplo:
+	GetDlgItem(hDlg, IDC_BUILD);
+-------------------------------------------------------------------------
+------------------------MoveWindow---------------------------------------
+
+Cambia la posición y las dimensiones de la ventana especificada.
+
+BOOL MoveWindow(
+  HWND hWnd,      // handle de ventana
+  int X,          // Posicion Horizontal
+  int Y,          // Posicion Vertical
+  int nWidth,     // Ancho
+  int nHeight,    // Alto
+  BOOL bRepaint   // Repintar Bandera
+);
+
+Ejemplo:
+	MoveWindow(hNuevo,Posx, Posy, ancho, alto , TRUE);
+-------------------------------------------------------------------------
+-------------------------EnableWindow------------------------------------
+
+Habilita o deshabilita la entrada de mouse y teclado a la ventana o 
+control especificado.
+
+BOOL EnableWindow(
+  HWND hWnd,     // Handle de Ventana
+  BOOL bEnable   // Indicador para activar o desactivar la entrada
+);
+
+Ejemplo:
+	EnableWindow(hHide,FALSE);
+-------------------------------------------------------------------------
+------------------------SetWindowPos-------------------------------------
+
+Cambia el tamaño, la posición y el orden Z de una ventana secundaria, 
+emergente o de nivel superior.
+
+BOOL SetWindowPos(
+  HWND hWnd,             // handle de ventana
+  HWND hWndInsertAfter,  // Handle de orden de colocacion
+  int X,                 // Posicion Horizontal
+  int Y,                 // Posicion Vertical
+  int cx,                // Ancho
+  int cy,                // Alto
+  UINT uFlags            // Banderas de posicionamiento de ventanas
+);
+
+Ejemplo:
+
+SetWindowPos(hNuevo, HWND_NOTOPMOST, Posx, Posy, ancho, alto, SWP_NOZORDER);
+
+hWndInsertAfter:
+HWND_BOTTOM --> Coloca la ventana en la parte inferior de la orden Z.
+
+uFlags:
+SWP_NOMOVE --> Conserva la posición actual (ignora los parámetros X e Y).
+---------------------------------------------------------------------------
+-------------------------SendMessage---------------------------------------
+
+Envia el mensaje especificado a una ventana o ventanas.
+
+LRESULT SendMessage(
+  HWND hWnd,      // handle de la ventana destino
+  UINT Msg,       // Mensaje a enviar
+  WPARAM wParam,  // Primer parametro del mensaje
+  LPARAM lParam   // Segundo Parametro del mensaje
+);
+
+
+Ejemplo:
+	SendMessage(hNuevo,BM_SETSTATE, 0, 0);
+---------------------------------------------------------------------------
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+				 M E N S A J E S
+
+-----------------BM_SETSTATE-----------------------------------------------
+
+Una aplicación envía un mensaje BM_SETSTATE para cambiar el estado de 
+resaltado de un botón.
+
+Ejemplo:
+	SendMessage(hNuevo,BM_SETSTATE, 0, 0);	
+---------------------------------------------------------------------------

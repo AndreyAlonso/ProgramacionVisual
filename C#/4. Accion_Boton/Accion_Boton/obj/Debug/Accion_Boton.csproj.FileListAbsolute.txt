@@ -1,0 +1,17 @@
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Accion_Boton\Accion_Boton\bin\Debug\Accion_Boton.exe.config
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Accion_Boton\Accion_Boton\bin\Debug\Accion_Boton.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Accion_Boton\Accion_Boton\bin\Debug\Accion_Boton.pdb
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.Form1.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.pdb
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\4. Accion_Boton\Accion_Boton\bin\Debug\Accion_Boton.exe.config
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\4. Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\4. Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.pdb
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\4. Accion_Boton\Accion_Boton\bin\Debug\Accion_Boton.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\4. Accion_Boton\Accion_Boton\bin\Debug\Accion_Boton.pdb
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\4. Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\4. Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.Form1.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\4. Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\4. Accion_Boton\Accion_Boton\obj\Debug\Accion_Boton.csproj.GenerateResource.Cache

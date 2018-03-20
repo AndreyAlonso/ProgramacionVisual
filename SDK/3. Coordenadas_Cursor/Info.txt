@@ -1,0 +1,33 @@
+﻿|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+			M	E	T	O	D	O	S
+
+-------------------------------InvalidateRect--------------------------------------------------------
+Agrega un rectángulo a la región de actualización de Windows especificada. 
+La región de actualización representa la parte del área de cliente de Windows
+que se debe volver a dibujar.
+
+	BOOL InvalidateRect(
+	  		HWND hWnd,  		// handle de ventana con region de actualizacion modificada
+			CONST RECT *lpRect,	// Direccion de las coordenadas del rectangulo
+			BOOL bErase // Borrar bandera de fondo
+	);
+
+--------------------------------------------------------------------------------------------------
+-------------------------------------itoa---------------------------------------------------------
+Convertir un entero a una cadena.
+
+
+		char *_itoa( int value, char *string, int radix );
+
+
+--------------------------------------------------------------------------------------------------
+-------------------------------------strcat-------------------------------------------------------
+Concatenar una cadena.
+
+
+			strcat(cadena destino, cadena a enviar);
+					
+--------------------------------------------------------------------------------------------------

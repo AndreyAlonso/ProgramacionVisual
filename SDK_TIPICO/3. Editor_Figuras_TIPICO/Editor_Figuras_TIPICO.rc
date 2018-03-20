@@ -1,0 +1,246 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexican) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Mexican) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Modern) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_EDITOR_FIGURAS_TIPICO ICON    DISCARDABLE     "Editor_Figuras_TIPICO.ICO"
+IDI_SMALL               ICON    DISCARDABLE     "SMALL.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_EDITOR_FIGURAS_TIPICO MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Shapes"
+    BEGIN
+        MENUITEM "&Rectangle",                  IDM_RECTANGLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Ellipse",                    IDM_ELLIPSE
+        MENUITEM "&RoundRect",                  IDM_ROUNDRECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Line",                       IDM_LINE
+        MENUITEM SEPARATOR
+        MENUITEM "&FreeHand",                   IDM_FREEHAND
+    END
+    POPUP "&Pen_Width"
+    BEGIN
+        MENUITEM " &1",                         IDM_P1
+        MENUITEM SEPARATOR
+        MENUITEM " &2",                         IDM_P2
+        MENUITEM SEPARATOR
+        MENUITEM " &3",                         IDM_P3
+        MENUITEM SEPARATOR
+        MENUITEM " &4",                         IDM_P4
+        MENUITEM SEPARATOR
+        MENUITEM " &5",                         IDM_P5
+    END
+    POPUP "&Pen Colors"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Red",                        IDM_RED_P
+        MENUITEM SEPARATOR
+        MENUITEM "&Green",                      IDM_GREEN_P
+        MENUITEM SEPARATOR
+        MENUITEM "&Blue",                       IDM_BLUE_P
+        MENUITEM SEPARATOR
+        MENUITEM "&Black",                      IDM_BLACK_P
+    END
+    POPUP "&Pen_Sytle"
+    BEGIN
+        MENUITEM " &PS_SOLID",                  IDM_PS_SOLID
+        MENUITEM SEPARATOR
+        MENUITEM " &PS_DASH",                   IDM_PS_DASH
+        MENUITEM SEPARATOR
+        MENUITEM " &PS_DOT",                    IDM_PS_DOT
+        MENUITEM SEPARATOR
+        MENUITEM " &PS_DASHDOT",                IDM_PS_DASHDOT
+        MENUITEM SEPARATOR
+        MENUITEM " &PS_DASHDOTDOT",             IDM_PS_DASHDOTDOT
+        MENUITEM SEPARATOR
+        MENUITEM " &PS_NULL",                   IDM_PS_NULL
+        MENUITEM SEPARATOR
+        MENUITEM " &PS_INSIDEFRAME",            IDM_PS_INSIDEFRAME
+    END
+    POPUP "&Brush_Style"
+    BEGIN
+        MENUITEM " &HS_BDIAGONAL",              IDM_HS_BDIAGONAL
+        MENUITEM SEPARATOR
+        MENUITEM " &HS_CROSS",                  IDM_HS_CROSS
+        MENUITEM SEPARATOR
+        MENUITEM " &HS_FDIAGONAL",              IDM_HS_FDIAGONAL
+        MENUITEM SEPARATOR
+        MENUITEM " &HS_HORIZONTAL",             IDM_HS_HORIZONTAL
+        MENUITEM SEPARATOR
+        MENUITEM " &HS_VERTICAL",               IDM_HS_VERTICAL
+        MENUITEM SEPARATOR
+        MENUITEM " &_HS_DIAGCROSS",             IDM_HS_DIAGCROSS
+        MENUITEM SEPARATOR
+        MENUITEM " &SOLIDO",                    IDM_SOLIDO
+    END
+    POPUP "B&rush_Color"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Red",                        IDM_RED_B
+        MENUITEM SEPARATOR
+        MENUITEM "&Green",                      IDM_GREEN_B
+        MENUITEM SEPARATOR
+        MENUITEM "&Blue",                       IDM_BLUE_B
+        MENUITEM SEPARATOR
+        MENUITEM "&Black",                      IDM_BLACK_B
+        MENUITEM SEPARATOR
+        MENUITEM " &Fucsia",                    IDM_FUCSIA_B
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_EDITOR_FIGURAS_TIPICO ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 230, 75
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_EDITOR_FIGURAS_TIPICO,IDC_MYICON,14,9,16,16
+    LTEXT           "Editor_Figuras_TIPICO Version 1.0",IDC_STATIC,49,10,119,
+                    8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Editor_Figuras_TIPICO"
+    IDS_HELLO               "Hello World!"
+    IDC_EDITOR_FIGURAS_TIPICO "EDITOR_FIGURAS_TIPICO"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_RECTANGLE           "Dibuja un Rectangle\tDrawRectangle"
+    IDM_ELLIPSE             "Dibuja un Elipse\tDrawEllipse"
+END
+
+#endif    // Spanish (Modern) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

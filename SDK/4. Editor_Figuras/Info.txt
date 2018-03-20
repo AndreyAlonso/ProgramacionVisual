@@ -1,0 +1,101 @@
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+							M	E	T	O	D	O	S
+
+-----------------------------------Rectangle-----------------------------------------
+Dibuja un rectangulo.
+
+		BOOL Rectangle(
+		  HDC hdc,         // handle del contexto del dispositivo
+		  int nLeftRect,   // x1 -> esquina superior en x
+		  int nTopRect,    // y1 -> esquina superior en y
+		  int nRightRect,  // x2 -> esquina inferior en x
+		  int nBottomRect  // y2 -> esquina inferior en y
+		);
+
+Ejemplo:
+	
+		Rectangle(hdc, 100, 100, 200, 200);
+
+-------------------------------------------------------------------------------------
+-----------------------------------Ellipse-------------------------------------------
+Dibuja una elipse.
+El centro de la elipse es el centro del rectángulo delimitador especificado.
+
+		BOOL Ellipse(
+			  HDC hdc,         // handle del contexto del dispositivo
+			  int nLeftRect,   // x1 -> esquina superior en x
+			  int nTopRect,    // y1 -> esquina superior en y
+			  int nRightRect,  // x2 -> esquina inferior en x
+			  int nBottomRect  // y2 -> esquina inferior en y
+		);
+
+-------------------------------------------------------------------------------------
+--------------------------------RoundRect--------------------------------------------
+Dibuja un rectangulo con esquinas redondeadas.
+
+
+		BOOL RoundRect(
+		      HDC hdc,         // handle del contexto del dispositivo
+			  int nLeftRect,   // x1 -> esquina superior en x
+			  int nTopRect,    // y1 -> esquina superior en y
+			  int nRightRect,  // x2 -> esquina inferior en x
+			  int nBottomRect  // y2 -> esquina inferior en y
+		      int nWidth,      // Anchura de la elipse utilizada para dibujar 
+		      					  esquinas redondeadas
+		      int nHeight      // Altura de la elipse utilizada para dibujar 
+		      					  esquinas redondeadas
+		);
+
+-------------------------------------------------------------------------------------
+-----------------------------MoveToEx------------------------------------------------
+Actualiza la posición actual al punto especificado y opcionalmente devuelve 
+la posición anterior.
+
+			BOOL MoveToEx(
+				  HDC hdc,          // handle to device context
+				  int X,            // Coordenada en x de la nueva posicion actual
+				  int Y,            // Coordenada en y de la nueva posicion actual
+				  LPPOINT lpPoint   // Apuntador a la poscion actual antigua
+			);
+
+-------------------------------------------------------------------------------------
+---------------------------------LineTo----------------------------------------------
+La función LineTo dibuja una línea desde la posición actual hasta el punto 
+especificado.
+
+			BOOL LineTo(
+				  HDC hdc,    // Handle del contexto del dispositivo
+				  int nXEnd,  // Coordenanda en x del punto final de la linea
+				  int nYEnd   // Coordenanda en y del punto final de la linea
+			);
+
+-------------------------------------------------------------------------------------
+----------------------------------LOWORD---------------------------------------------
+Recupera la palabra de orden inferior del valor de 32 bits dado.
+
+
+				WORD LOWORD(
+				  DWORD dwValue //Valor desde el cual se recupera la palabra de orden bajo
+				);
+
+-------------------------------------------------------------------------------------
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+						M 	E 	N 	S 	A 	J 	E 	S
+
+------------------------------------WM_COMMAND---------------------------------------
+Se envía cuando el usuario selecciona un elemento de comando de un menú, cuando un 
+control envía un mensaje de notificación a su ventana primaria o cuando se invierte 
+una pulsación del acelerador.
+
+			WM_COMMAND 
+			wNotifyCode = HIWORD(wParam); // Codigo de notificacion 
+			wID = LOWORD(wParam);         // Identificador de elemento, control o acelerador
+			hwndCtl = (HWND) lParam;      // handle de Control
+
+-------------------------------------------------------------------------------------

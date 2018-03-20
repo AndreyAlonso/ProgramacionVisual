@@ -1,0 +1,386 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dir",
+				"dirSig"
+			],
+			[
+				"in",
+				"include"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "#include <iostream>\n\n//[Clase Component] ver diagrama de clases\nclass IVentanaAbstracta\n{\n    public:\n       \n        virtual void Dibujar() = 0;\n};\n\n//[Clase ConcreteComponent] ver diagrama de clases, Clase que se desea decorar\nclass Ventana : public IVentanaAbstracta\n{\n    public:\n   \n        void Dibujar()\n        {\n            std::cout << \" Ventana \";\n        }\n};\n\n//[Clase Decorator] ver diagrama de clases\nclass VentanaDecorator : public IVentanaAbstracta\n{\n    public:\n        VentanaDecorator(IVentanaAbstracta* ventanaAbstracta)\n        {\n            _VentanaAbstracta = ventanaAbstracta;\n        }\n        \n        virtual void Dibujar() = 0;\n        \n    protected:\n        IVentanaAbstracta* _VentanaAbstracta;\n};\n\n//[Clase ConcreteDecorator] ver diagrama de clases\nclass BordeDecorator : public VentanaDecorator\n{\n    public:\n        BordeDecorator(IVentanaAbstracta* ventanaAbstracta) : VentanaDecorator(ventanaAbstracta)\n        {\n            \n        }\n        \n        virtual void Dibujar()\n        {\n            std::cout << \"|\";\n            _VentanaAbstracta->Dibujar();\n            std::cout << \"|\";\n        }\n};\n\n//[Clase ConcreteDecorator] ver diagrama de clases\nclass BotonDeAyudaDecorator : public VentanaDecorator\n{\n    public:\n        BotonDeAyudaDecorator(IVentanaAbstracta* ventanaAbstracta) : VentanaDecorator(ventanaAbstracta)\n        {\n            \n        }\n        \n        virtual void Dibujar()\n        {\n            _VentanaAbstracta->Dibujar();\n            std::cout << \"[Boton de Ayuda]\";\n        }\n};\n\nint main()\n{\n    BotonDeAyudaDecorator* ventanaConBotonDeAyuda = new BotonDeAyudaDecorator(new Ventana());\n    ventanaConBotonDeAyuda->Dibujar();\n    std::cout << std::endl;\n\n    BordeDecorator* ventanaConBotonDeAyudaYBorde = new BordeDecorator(ventanaConBotonDeAyuda);\n    ventanaConBotonDeAyudaYBorde->Dibujar();\n    std::cout << std::endl;\n\n    BordeDecorator* ventanaConBorde = new BordeDecorator(new Ventana());\n    ventanaConBorde->Dibujar();\n    std::cout << std::endl;\n\n    BordeDecorator* ventanaConDobleBorde = new BordeDecorator(ventanaConBorde);\n    ventanaConDobleBorde->Dibujar();\n    std::cout << std::endl;\n    \n    delete ventanaConBotonDeAyuda;\n    delete ventanaConBotonDeAyudaYBorde;\n    delete ventanaConBorde;\n    delete ventanaConDobleBorde;\n        \n    return 0;\n}",
+			"settings":
+			{
+				"buffer_size": 2335,
+				"line_ending": "Windows",
+				"name": "#include <iostream>"
+			}
+		},
+		{
+			"contents": "\n public abstract class Componente{\n    abstract public void operacion();\n }\n \n public class ComponenteConcreto extends Componente{\n    public void operacion(){\n        System.out.println(\"ComponenteConcreto.operacion()\");\n    }\n }\n \n public abstract class Decorador extends Componente{\n    private Componente componente;\n \n    public Decorador(Componente componente){\n        this.componente = componente;\n    }\n \n    public void operacion(){\n        componente.operacion();\n    }\n }\n \n public class DecoradorConcretoA extends Decorador{\n    private String propiedadAñadida;\n \n    public DecoradorConcretoA(Componente componente){\n        super(componente);\n    }\n \n    public void operacion(){\n        super.operacion();\n        this.propiedadAñadida = \"Nueva propiedad\";\n        System.out.println(\"DecoradorConcretoA.operacion()\");\n    }\n }\n \n public class DecoradorConcretoB extends Decorador{\n    public DecoradorConcretoB(Componente componente){\n        super(componente);\n    }\n \n    public void operacion(){\n        super.operacion();\n        comportamientoAñadido();\n        System.out.println(\"DecoradorConcretoB.operacion()\");\n    }\n \n    public void comportamientoAñadido(){\n        System.out.println(\"Comportamiento B añadido\");\n    }\n }\n \n public class Cliente{\n    public static void main(String[] args){\n        ComponenteConcreto c = new ComponenteConcreto();\n        DecoradorConcretoA d1 = new DecoradorConcretoA(c);\n        DecoradorConcretoB d2 = new DecoradorConcretoB(d1);\n        d2.operacion();\n    }\n }",
+			"settings":
+			{
+				"buffer_size": 1530,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/MFC/12. Conjuntos/CajaInter.cpp",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/MFC/12. Conjuntos/CajaUnion.cpp",
+		"/C/Users/Usuario/Desktop/Estructuras-de-Archivos--2017-/2. Diccionario de Datos/Principal/Atributo.cs",
+		"/C/Users/Usuario/Desktop/Lista/Lista/Program.cs",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/Estructuras de Archivos/C#/Consola/Listas/Listas/Program.cs",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/Estructuras de Archivos/C#/Consola/6. Lectura de Archivos/Archivos/Program.cs",
+		"/C/Users/Usuario/Desktop/Android.txt",
+		"/C/Users/Usuario/Downloads/BURBUJA.c",
+		"/C/Users/Usuario/Desktop/Pendientes.txt",
+		"/C/Users/Usuario/Desktop/Nuevo documento de texto.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/OOP/3. Examen2_Editor_de_Texto/CascaronMFC_Clases.cpp",
+		"/C/Users/Usuario/Desktop/Programación Visual.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/MFC/7. Dialogos_Comunes/Debug/Colores.txt",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/2. Estructuras de Datos y Algoritmos A/Graficos/main.c",
+		"/F/Avance.txt",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/FINAL CYGNUS X - 1/main.c",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/9. Lista_Num/Lista_Num.cpp",
+		"/F/Visual_05_Octubre_2017/OOP/3. Examen2_Editor_de_Texto/CascaronMFC_Clases.cpp",
+		"/F/12_Visual_04_Octubre_2017/Avance.txt",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/Estructuras de Datos/EDA B/ArbolesBinarios/main.c",
+		"/C/Program Files (x86)/TNod/LEEME.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/5. Dialogo_Controles/Dialogo_Controles.cpp",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/OOP/2. CascaronMFC_Clases/CascaronMFC_Clases.cpp",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/3. Coordenadas_Cursor/Coordenadas_Cursor.c",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/3. Editor_Figuras_TIPICO/Editor_Figuras_TIPICO.cpp",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/Avance.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/OOP/3. Examen2_Editor_de_Texto/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/OOP/2. CascaronMFC_Clases/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/OOP/1. Cascaron_MFC/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/2. Mensajes_Mouse/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/1. Cascaron/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/3. Editor_Figuras_TIPICO/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/4. PreEx1_Tipico_Pizarron/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/3. Coordenadas_Cursor/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/11. PreEx2.1_Combo_Decenas/Combo_Decenas.cpp",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/6. Botones_Tipico/Botones_Tipico.cpp",
+		"/C/Users/Usuario/Downloads/andrey.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/10. PreEx2.1_Tipico_Combo_Decenas/Combo_Decenas.cpp",
+		"/E/Avance.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/6. Botones_Tipico/Botones_Tipico.dsw",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/8. Pelota_tipico/Pelota_tipico.cpp",
+		"/C/Users/Usuario/Desktop/Listas.c",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/Combo_Decenas/Lista_Num.h",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/Combo_Decenas/Combo_Decenas.h",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/Combo_Decenas/Combo_Decenas.cpp",
+		"/C/Users/Usuario/Desktop/inuts.txt",
+		"/C/Users/Usuario/Desktop/Diccionario de Datos/Principal/Principal/bin/Debug/Andrey.txt",
+		"/C/Users/Usuario/Desktop/Hola.txt",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/Estructuras de Archivos/C#/Formulario/1. MDI/MDI/Form1.cs",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/Estructuras de Archivos/C#/Consola/5. Creacion de Archivos/Archivos/Program.cs",
+		"/C/Users/Usuario/Desktop/Diccionario de Datos/Principal/Principal/bin/Debug/Ejemplo01.txt",
+		"/C/Users/Usuario/Desktop/Diccionario de Datos/Principal/Principal/bin/Debug/Ejemplo03.txt",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/Estructuras de Archivos/C#/Formulario/1. MDI/MDI/Form2.cs",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/Estructuras de Archivos/C#/Formulario/1. MDI/MDI/Program.cs",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/Estructuras de Archivos/C#/Consola/5. Creacion de Archivos/Archivos/Archivos.csproj",
+		"/C/Users/Usuario/Documents/UASLP - Ingenieria/Estructuras de Archivos/C#/Consola/5. Creacion de Archivos/Archivos/bin/Debug/Ejemplo_Archivo.txt",
+		"/C/Users/Usuario/Documents/Estructuras de Archivos/C#/Consola/6. Lectura de Archivos/Archivos/bin/Debug/Ejemplo_Archivo.txt",
+		"/C/Users/Usuario/Documents/Estructuras de Archivos/C#/Consola/5. Lectura de Archivos/Archivos/bin/Debug/Ejemplo_Archivo.txt",
+		"/C/Users/Usuario/Documents/Estructuras de Archivos/C#/Consola/Archivos/Archivos/bin/Debug/Ejemplo_Archivo.txt",
+		"/C/Users/Usuario/Documents/Estructuras de Archivos/C#/Consola/Archivos/Archivos/Program.cs",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/7. Tempo_tipico/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/6. Botones_Tipico/Info.txt",
+		"/E/Info.txt",
+		"/C/Users/Usuario/Desktop/lista.bin.txt",
+		"/C/Users/Usuario/Desktop/Memoria.c",
+		"/C/Users/Usuario/Desktop/Estructuras.c",
+		"/C/Users/Usuario/Downloads/222.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/4. Editor_Figuras/Cascaron.c",
+		"/E/Visual_31_Agosto_2017/Avance.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/4. Editor_Figuras/Info.txt",
+		"/C/Users/Usuario/Documents/Asesorias EDA A y B/Archivos_Abrir.c",
+		"/C/Users/Usuario/Documents/Asesorias EDA A y B/EDA A/Datos.txt",
+		"/C/Users/Usuario/Desktop/Estructuras de Archivos/Estructuras de Archivos/Form1.cs",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/1. Primero_TIPICO/Primero_TIPICO.cpp",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/1. Primero_TIPICO/ReadMe.txt",
+		"/C/Users/Usuario/Documents/Instaladores/Halo Combat Evolved/Instrucciones.txt",
+		"/C/Users/Usuario/Documents/Instaladores/Daemon Tools Lite 10/DAEMON Tools Lite v10.4.0.190/Instrucciones.txt",
+		"/C/Users/Usuario/Downloads/Halo Combat Evolved by MsGRDC/Serial.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK_TIPICO/Primero_TIPICO/Primero_TIPICO.rc",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/1. Cascaron/Cascaron.c",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/1. Cascaron/Cascaron.dsw",
+		"/C/Users/Usuario/Desktop/Varaibles, Arreglos y Matrices dinamicas.c",
+		"/C/Users/Usuario/Desktop/Ejercicio_Malloc.c",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/Cascaron/Info.txt",
+		"/E/Java Method Overriding/README.TXT",
+		"/C/Users/Usuario/Downloads/LosSims4[[MkpoMoreira]]/LEEME.txt",
+		"/C/Users/Usuario/Documents/Instaladores/Descarga todogratis enlaces.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/Mensajes_Mouse/Info.txt",
+		"/C/Users/Usuario/Desktop/Hector Andrey Hernandez Alonso/SDK/Cascaron/Cascaron.c",
+		"/C/Users/Usuario/Downloads/FINAL CYGNUS X - 1/main.c",
+		"/C/Users/Usuario/Downloads/FINAL CYGNUS X - 1/personaje.txt",
+		"/C/Users/Usuario/Downloads/FINAL CYGNUS X - 1/nivel4.txt"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"lParam",
+			"xpos2",
+			"wndproc",
+			"lista",
+			"colorPluma",
+			"colorFondo",
+			"brushNew",
+			"bandFinal",
+			"hdc",
+			"HDC"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								125
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <iostream>",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1530,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1043,
+								1043
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Conjuntos.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

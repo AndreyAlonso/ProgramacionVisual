@@ -1,0 +1,27 @@
+-------------------------------------------------------------
+Clases: 
+
+CWinApp:
+Es la clase base desde la que se obtiene un objeto de 
+aplicación de Windows.
+Un objeto de aplicación proporciona funciones de miembro 
+para inicializar su aplicación (y cada una de ellas) y 
+para ejecutar la aplicación.
+
+
+-------------------------------------------------------------
+-------------------------------------------------------------
+Mensajes:
+
+AfxMessageBox:
+Muestra una caja dialogo con mensaje.
+Puede llevar varios parametros o solo la cadena y se toman
+los demas por default.
+
+int AfxMessageBox( LPCTSTR lpszText, 
+				   UINT nType = MB_OK,
+				    UINT nIDHelp = 0 
+				   );
+
+IDOK  --> El boton OK fue seleccionado.
+--------------------------------------------------------------

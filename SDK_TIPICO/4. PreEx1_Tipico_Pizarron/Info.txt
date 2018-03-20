@@ -1,0 +1,11 @@
+Metodos:
+	FloodFill:
+	Llena un área de la superficie de visualización con el cepillo actual.
+
+
+        BOOL FloodFill(
+             HDC hdc,          // handle del dispositivo de contexto
+             int nXStart,      // Coordenada en X
+             int nYStart,      // Coordenada en y
+             COLORREF crFill   // Color de llenado
+        );

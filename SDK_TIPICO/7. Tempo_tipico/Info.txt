@@ -1,0 +1,19 @@
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+		M E N S A J E S
+
+SetTimer..................................................
+
+La función SetTimer crea un temporizador con el valor de 
+tiempo de espera especificado.
+
+UINT SetTimer(
+  HWND hWnd,              // handle de la ventana para el timer
+  UINT nIDEvent,          // Identificador del timer
+  UINT uElapse,           // Valor de Tiempo de Espera
+  TIMERPROC lpTimerFunc   // dirección del procedimiento del temporizador
+);
+
+Ejemplo:
+	 SetTimer(hWnd, IDT_TIMER, 20, (TIMERPROC)NULL);
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||

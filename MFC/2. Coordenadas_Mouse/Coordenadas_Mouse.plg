@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Coordenadas_Mouse - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP8F87.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Coordenadas_Mouse.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\2. Coordenadas_Mouse\Coordenadas_Mouse.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\2. Coordenadas_Mouse\Coordenadas_MouseView.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSP8F87.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP8F88.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Coordenadas_Mouse.pdb" /debug /machine:I386 /out:"Debug/Coordenadas_Mouse.exe" /pdbtype:sept 
+".\Debug\Coordenadas_Mouse.obj"
+".\Debug\Coordenadas_MouseDoc.obj"
+".\Debug\Coordenadas_MouseView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Coordenadas_Mouse.res"
+]
+Creating command line "link.exe @C:\Users\Usuario\AppData\Local\Temp\RSP8F88.tmp"
+<h3>Output Window</h3>
+Compiling...
+Coordenadas_Mouse.cpp
+Generating Code...
+Compiling...
+Coordenadas_MouseView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Coordenadas_Mouse.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Conjuntos - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/Conjuntos.res" /d "_DEBUG" /d "_AFXDLL" "C:\Users\Usuario\Desktop\12. Conjuntos\Conjuntos.rc"" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSPA116.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Conjuntos.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\12. Conjuntos\CajaComplemento.cpp"
+"C:\Users\Usuario\Desktop\12. Conjuntos\CajaInter.cpp"
+"C:\Users\Usuario\Desktop\12. Conjuntos\CajaUnion.cpp"
+"C:\Users\Usuario\Desktop\12. Conjuntos\Conjuntos.cpp"
+"C:\Users\Usuario\Desktop\12. Conjuntos\ConjuntosDoc.cpp"
+"C:\Users\Usuario\Desktop\12. Conjuntos\ConjuntosView.cpp"
+"C:\Users\Usuario\Desktop\12. Conjuntos\MainFrm.cpp"
+"C:\Users\Usuario\Desktop\12. Conjuntos\NodoP.cpp"
+"C:\Users\Usuario\Desktop\12. Conjuntos\Set.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSPA116.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSPA117.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Conjuntos.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\12. Conjuntos\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSPA117.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSPA118.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Conjuntos.pdb" /debug /machine:I386 /out:"Debug/Conjuntos.exe" /pdbtype:sept 
+".\Debug\CajaComplemento.obj"
+".\Debug\CajaInter.obj"
+".\Debug\CajaUnion.obj"
+".\Debug\Conjuntos.obj"
+".\Debug\ConjuntosDoc.obj"
+".\Debug\ConjuntosView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\NodoP.obj"
+".\Debug\Set.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Conjuntos.res"
+]
+Creating command line "link.exe @C:\Users\Usuario\AppData\Local\Temp\RSPA118.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CajaComplemento.cpp
+CajaInter.cpp
+C:\Users\Usuario\Desktop\12. Conjuntos\CajaInter.cpp(55) : warning C4101: 'posB' : unreferenced local variable
+C:\Users\Usuario\Desktop\12. Conjuntos\CajaInter.cpp(54) : warning C4101: 'anterior' : unreferenced local variable
+C:\Users\Usuario\Desktop\12. Conjuntos\CajaInter.cpp(55) : warning C4101: 'posA' : unreferenced local variable
+CajaUnion.cpp
+Conjuntos.cpp
+ConjuntosDoc.cpp
+ConjuntosView.cpp
+MainFrm.cpp
+NodoP.cpp
+Set.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Conjuntos.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

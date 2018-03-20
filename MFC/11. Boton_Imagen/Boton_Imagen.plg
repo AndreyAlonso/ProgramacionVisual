@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Boton_Imagen - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/Boton_Imagen.res" /d "_DEBUG" /d "_AFXDLL" "C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\11. Boton_Imagen\Boton_Imagen.rc"" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSPA94A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Boton_Imagen.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\11. Boton_Imagen\Boton_Imagen.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\11. Boton_Imagen\Boton_ImagenDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSPA94A.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSPA95B.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Boton_Imagen.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\11. Boton_Imagen\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSPA95B.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Boton_Imagen.pdb" /debug /machine:I386 /out:"Debug/Boton_Imagen.exe" /pdbtype:sept  ".\Debug\Boton_Imagen.obj" ".\Debug\Boton_ImagenDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\Boton_Imagen.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Boton_Imagen.cpp
+Boton_ImagenDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Boton_Imagen.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

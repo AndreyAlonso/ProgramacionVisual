@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Controles_Comunes - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/Controles_Comunes.res" /d "_DEBUG" "C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\5. Controles_Comunes\Controles_Comunes.rc"" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP22E1.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Controles_Comunes.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\5. Controles_Comunes\Controles_Comunes.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\5. Controles_Comunes\Controles_ComunesDoc.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\5. Controles_Comunes\Controles_ComunesView.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\5. Controles_Comunes\MainFrm.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\5. Controles_Comunes\Progress.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\5. Controles_Comunes\Slider.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\5. Controles_Comunes\Spin.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSP22E1.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP22E2.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Controles_Comunes.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\5. Controles_Comunes\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSP22E2.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP22E3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Controles_Comunes.pdb" /debug /machine:I386 /out:"Debug/Controles_Comunes.exe" /pdbtype:sept 
+".\Debug\Controles_Comunes.obj"
+".\Debug\Controles_ComunesDoc.obj"
+".\Debug\Controles_ComunesView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Progress.obj"
+".\Debug\Slider.obj"
+".\Debug\Spin.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Controles_Comunes.res"
+]
+Creating command line "link.exe @C:\Users\Usuario\AppData\Local\Temp\RSP22E3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Controles_Comunes.cpp
+Controles_ComunesDoc.cpp
+Controles_ComunesView.cpp
+MainFrm.cpp
+Progress.cpp
+Slider.cpp
+Spin.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP2D02.tmp" with contents
+[
+/nologo /o"Debug/Controles_Comunes.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Controles_Comunes.sbr"
+".\Debug\Controles_ComunesDoc.sbr"
+".\Debug\Controles_ComunesView.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\Progress.sbr"
+".\Debug\Slider.sbr"
+".\Debug\Spin.sbr"]
+Creating command line "bscmake.exe @C:\Users\Usuario\AppData\Local\Temp\RSP2D02.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Controles_Comunes.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

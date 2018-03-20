@@ -1,0 +1,81 @@
+﻿||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+	
+		M	E	T 	O 	D 	O 	S
+
+-------------------------------------MessageBox-------------------------------------------------
+La función MessageBox crea, muestra y ejecuta un cuadro de mensaje. 
+El cuadro de mensaje contiene un mensaje y un título definidos por la aplicación, más cualquier 
+combinación de iconos predefinidos y botones pulsadores.
+
+	int MessageBox(
+		HWND hWnd,          // Handle de la ventana del propietario
+		LPCTSTR lpText,     // Dirección del texto en el cuadro de mensaje
+		LPCTSTR lpCaption,  // Direccion del titulo en el cuadro de mensaje
+		UINT uType          // Estilo del cuadro de mensaje
+	);
+ 
+Parametro:
+
+lpCaption   -----> Apuntador a una cadena terminada en nulo utilizada para el título del cuadro 
+		de diálogo. 
+		Si este parámetro es NULL, se utiliza el título predeterminado Error.
+
+Ejemplo:
+
+	MessageBox(hWnd, "Boton Izquierdo Arriba", "Mensaje del Mouse", MB_OK);
+			
+------------------------------------------------------------------------------------------------
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+		M 	E 	N 	S 	A 	J 	E 	S
+
+----------------------------------------WM_LBUTTONDOWN------------------------------------------
+El mensaje WM_LBUTTONDOWN se publica cuando el usuario presiona el botón izquierdo del mouse 
+mientras el cursor está en el área de cliente de una ventana.
+
+		WM_LBUTTONDOWN 
+			fwKeys = wParam;        // Llave Banderas
+			xPos = LOWORD(lParam);  // Posicion Horizontal del cursor
+			yPos = HIWORD(lParam);  // Posicion Vertical del cursor
+
+
+------------------------------------------------------------------------------------------------
+------------------------------------WM_RBUTTONDOWN----------------------------------------------
+El mensaje WM_RBUTTONDOWN se publica cuando el usuario presiona el botón secundario del mouse 
+mientras el cursor está en el área de cliente de una ventana.
+
+		WM_RBUTTONDOWN 
+			fwKeys = wParam;        // Llave Banderas
+			xPos = LOWORD(lParam);  // Posicion Horizontal del cursor
+			yPos = HIWORD(lParam);  // Posicion Vertical del cursor
+
+------------------------------------------------------------------------------------------------
+
+---------------------------------------WM_RBUTTONUP---------------------------------------------
+El mensaje WM_RBUTTONUP se publica cuando el usuario suelta el botón derecho del mouse mientras 
+el cursor está en el área de cliente de una ventana.
+
+------------------------------------------------------------------------------------------------
+
+--------------------------------------WM_LBUTTONUP----------------------------------------------
+El mensaje WM_LBUTTONUP se publica cuando el usuario suelta el botón izquierdo del mouse 
+mientras el cursor está en el área de cliente de una ventana.
+
+------------------------------------------------------------------------------------------------
+
+-------------------------------------WM_MBUTTONDOWN---------------------------------------------
+El mensaje WM_MBUTTONDOWN se publica cuando el usuario presiona el botón central del mouse 
+mientras el cursor está en el área de cliente de una ventana.
+
+------------------------------------------------------------------------------------------------
+
+---------------------------------------WM_MBUTTONUP---------------------------------------------
+El mensaje WM_MBUTTONDOWN se publica cuando el usuario suelta el botón central del mouse 
+mientras el cursor está en el área de cliente de una ventana.
+
+------------------------------------------------------------------------------------------------
+

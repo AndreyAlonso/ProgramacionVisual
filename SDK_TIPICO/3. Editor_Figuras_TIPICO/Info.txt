@@ -1,0 +1,175 @@
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+			M	E	T	O	D	O	S
+
+-------------------SetROP2-----------------------------------------------
+
+Establece el modo actual de mezcla de primer plano.
+El modo de mezcla de primer plano define cómo se combinan los colores 
+del pincel o lápiz y los colores de la imagen existente.
+
+
+	int SetROP2(
+	  HDC hdc,         // handle del contexto del dispositivo
+	  int fnDrawMode   // Modo de Dibujo
+	);
+
+Ejemplo:
+
+	R2_COPYPEN    ---> El Pixel es del color de la pluma.
+
+	SetROP2(hdc, R2_COPYPEN);
+
+-------------------------------------------------------------------------
+
+------------------CreatePen----------------------------------------------
+Crea un lápiz lógico que tiene el estilo, el ancho y el color 
+especificados.
+
+
+	HPEN CreatePen(
+	  int fnPenStyle,    // Estilo de Pluma.
+	  int nWidth,        // Ancho de Pluma.
+	  COLORREF crColor   // Color de Pluma.
+	);
+
+Ejemplo:
+	PS_DASHDOT		---> La pluma tiene rayas y puntos alternados.
+
+	CreatePen(penStyle, penWidth, PS_DASHDOT);
+-------------------------------------------------------------------------
+
+-----------------CreateSolidBrush----------------------------------------
+
+La función crea un cepillo lógico que tiene el color sólido especificado.
+
+	HBRUSH CreateSolidBrush(
+	  COLORREF crColor   // Valor del color de Brocha
+	);
+ 
+Ejemplo:
+ 	CreateSolidBrush(colorBrocha);
+
+-------------------------------------------------------------------------
+
+------------------CreateHatchBrush---------------------------------------
+La función crea un cepillo lógico que tiene el patrón de sombreado 
+especificado y el color.
+
+
+		HBRUSH CreateHatchBrush(
+		  int fnStyle,      // Estilo de sombreado
+		  COLORREF clrref   // Valor del Color
+		);
+Ejemplo:
+	
+	HS_VERTICAL	---> Hatch Vertical
+
+	CreateHatchBrush(brushStyle, colorBrocha);
+
+-------------------------------------------------------------------------
+
+--------------------MoveToEx---------------------------------------------
+
+Actualiza la posición actual al punto especificado y opcionalmente 
+devuelve la posición anterior.
+
+
+		BOOL MoveToEx(
+		  HDC hdc,          // Handle del contexto del dispositivo
+		  int X,            // Coordenanda x de la nueva posicion actual
+		  int Y,            // Coordenanda y de la nueva posicion actual
+		  LPPOINT lpPoint   // Apuntador a la posicion actual antigua
+		);
+
+Ejemplo:
+
+
+		MoveToEx(hdc,xPos1, yPos1,NULL);
+
+-------------------------------------------------------------------------
+
+-------------------------LineTo------------------------------------------
+
+Dibuja una línea desde la posición actual hasta, pero sin incluir, 
+el punto especificado.
+
+
+		BOOL LineTo(
+		  HDC hdc,    // Handle del contexto del dispositivo
+		  int nXEnd,  // Coordenada x del punto final de la línea
+		  int nYEnd   // Coordenada y del punto final de la linea
+		);
+Ejemplo:
+
+		LineTo(hdc, xPos2, yPos2);
+
+-------------------------------------------------------------------------
+
+---------------------SetPixel--------------------------------------------
+
+Ajusta el píxel en las coordenadas especificadas al color especificado.
+
+
+		COLORREF SetPixel(
+		  HDC hdc,           // Handle del contexto del dispositivo
+		  int X,             // Coordenada x del pixel
+		  int Y,             // Coordenada y del pixel
+		  COLORREF crColor   // Color del pixel
+		);
+
+
+Ejemplo:
+		SetPixel(hdc,xPos1,yPos1, colorPluma);
+-------------------------------------------------------------------------
+
+------------------------Sleep--------------------------------------------
+
+Suspende la ejecución del subproceso actual durante un intervalo 
+especificado.
+
+
+		VOID Sleep(
+		  DWORD dwMilliseconds   // Tiempo de reposo en milisegundos
+		);
+
+Ejemplo:
+		
+		Sleep(20);
+
+-------------------------------------------------------------------------
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+				T 	I 	P 	O 	S
+
+---------------------COLORREF--------------------------------------------
+
+Es un valor de 32 bits que se utiliza para especificar un color RGB.
+
+Ejemplo:
+
+	COLORREF color = RGB(255, 0, 0);
+
+-------------------------------------------------------------------------
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+			H 	A 	N 	D 	L 	E
+			
+--------------------HPEN-------------------------------------------------
+
+Handle de la Pluma.
+
+Ejemplo:
+
+		HPEN penNew;
+-------------------------------------------------------------------------
+
+-------------------HBRUSH------------------------------------------------
+
+Handle de la Brocha.
+-------------------------------------------------------------------------

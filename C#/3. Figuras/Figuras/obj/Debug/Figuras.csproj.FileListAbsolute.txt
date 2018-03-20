@@ -1,0 +1,21 @@
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Figuras\Figuras\bin\Debug\Figuras.exe.config
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Figuras\Figuras\bin\Debug\Figuras.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Figuras\Figuras\bin\Debug\Figuras.pdb
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Figuras\Figuras\obj\Debug\Figuras.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Figuras\Figuras\obj\Debug\Figuras.Form1.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Figuras\Figuras\obj\Debug\Figuras.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Figuras\Figuras\obj\Debug\Figuras.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Figuras\Figuras\obj\Debug\Figuras.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\Figuras\Figuras\obj\Debug\Figuras.pdb
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\3. Figuras\Figuras\bin\Debug\Figuras.exe.config
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\3. Figuras\Figuras\bin\Debug\Figuras.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\3. Figuras\Figuras\bin\Debug\Figuras.pdb
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\3. Figuras\Figuras\obj\Debug\Figuras.Form1.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\3. Figuras\Figuras\obj\Debug\Figuras.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\3. Figuras\Figuras\obj\Debug\Figuras.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\3. Figuras\Figuras\obj\Debug\Figuras.exe
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\3. Figuras\Figuras\obj\Debug\Figuras.pdb
+C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\C#\3. Figuras\Figuras\obj\Debug\Figuras.csprojResolveAssemblyReference.cache
+C:\Users\Andrey Hernández\Documents\Ingenieria en Informática\Programación Visual\C#\3. Figuras\Figuras\bin\Debug\Figuras.exe.config
+C:\Users\Andrey Hernández\Documents\Ingenieria en Informática\Programación Visual\C#\3. Figuras\Figuras\obj\Debug\Figuras.exe
+C:\Users\Andrey Hernández\Documents\Ingenieria en Informática\Programación Visual\C#\3. Figuras\Figuras\obj\Debug\Figuras.pdb

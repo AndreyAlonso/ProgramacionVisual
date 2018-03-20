@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GrafoOptimoAleatorio - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/GrafoOptimoAleatorio.res" /d "_DEBUG" "C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\8. GrafoOptimoAleatorio\GrafoOptimoAleatorio.rc"" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP3D7.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/GrafoOptimoAleatorio.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\8. GrafoOptimoAleatorio\CajaImprime.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\8. GrafoOptimoAleatorio\GrafoOptimoAleatorio.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\8. GrafoOptimoAleatorio\GrafoOptimoAleatorioDoc.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\8. GrafoOptimoAleatorio\GrafoOptimoAleatorioView.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\8. GrafoOptimoAleatorio\MainFrm.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\8. GrafoOptimoAleatorio\NodoP.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\8. GrafoOptimoAleatorio\NodoR.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSP3D7.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP3D8.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/GrafoOptimoAleatorio.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\8. GrafoOptimoAleatorio\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSP3D8.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP3D9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/GrafoOptimoAleatorio.pdb" /debug /machine:I386 /out:"Debug/GrafoOptimoAleatorio.exe" /pdbtype:sept 
+".\Debug\CajaImprime.obj"
+".\Debug\GrafoOptimoAleatorio.obj"
+".\Debug\GrafoOptimoAleatorioDoc.obj"
+".\Debug\GrafoOptimoAleatorioView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\NodoP.obj"
+".\Debug\NodoR.obj"
+".\Debug\StdAfx.obj"
+".\Debug\GrafoOptimoAleatorio.res"
+]
+Creating command line "link.exe @C:\Users\Usuario\AppData\Local\Temp\RSP3D9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CajaImprime.cpp
+GrafoOptimoAleatorio.cpp
+GrafoOptimoAleatorioDoc.cpp
+GrafoOptimoAleatorioView.cpp
+MainFrm.cpp
+NodoP.cpp
+NodoR.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+GrafoOptimoAleatorio.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

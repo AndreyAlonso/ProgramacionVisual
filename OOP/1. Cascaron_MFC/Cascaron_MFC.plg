@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Cascaron_MFC - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP89A9.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Cascaron_MFC.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\OOP\1. Cascaron_MFC\Cascaron_MFC.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSP89A9.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/Cascaron_MFC.pdb" /machine:I386 /out:"Release/Cascaron_MFC.exe"  ".\Release\Cascaron_MFC.obj" "
+<h3>Output Window</h3>
+Compiling...
+Cascaron_MFC.cpp
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+Cascaron_MFC.exe - 0 error(s), 2 warning(s)
+<h3>
+--------------------Configuration: Cascaron_MFC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP8F45.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/Cascaron_MFC.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\OOP\1. Cascaron_MFC\Cascaron_MFC.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSP8F45.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Cascaron_MFC.pdb" /debug /machine:I386 /out:"Debug/Cascaron_MFC.exe" /pdbtype:sept  ".\Debug\Cascaron_MFC.obj" "
+<h3>Output Window</h3>
+Compiling...
+Cascaron_MFC.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Cascaron_MFC.bsc"  ".\Debug\Cascaron_MFC.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Cascaron_MFC.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

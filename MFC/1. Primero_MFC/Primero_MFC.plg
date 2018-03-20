@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Primero_MFC - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Release/Primero_MFC.res" /d "NDEBUG" /d "_AFXDLL" "C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\Primero_MFC.rc"" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSPAF0.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Primero_MFC.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\MainFrm.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\Primero_MFC.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\Primero_MFCDoc.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\Primero_MFCView.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSPAF0.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSPAF1.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Primero_MFC.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSPAF1.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSPAF2.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Primero_MFC.pdb" /machine:I386 /out:"Release/Primero_MFC.exe" 
+".\Release\MainFrm.obj"
+".\Release\Primero_MFC.obj"
+".\Release\Primero_MFCDoc.obj"
+".\Release\Primero_MFCView.obj"
+".\Release\StdAfx.obj"
+".\Release\Primero_MFC.res"
+]
+Creating command line "link.exe @C:\Users\Usuario\AppData\Local\Temp\RSPAF2.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MainFrm.cpp
+Primero_MFC.cpp
+Primero_MFCDoc.cpp
+Primero_MFCView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Primero_MFC.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Primero_MFC - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x80a /fo"Debug/Primero_MFC.res" /d "_DEBUG" /d "_AFXDLL" "C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\Primero_MFC.rc"" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP11A7.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Primero_MFC.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\MainFrm.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\Primero_MFC.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\Primero_MFCDoc.cpp"
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\Primero_MFCView.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSP11A7.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP11A8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Primero_MFC.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Usuario\Desktop\Hector Andrey Hernandez Alonso\MFC\1. Primero_MFC\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Usuario\AppData\Local\Temp\RSP11A8.tmp" 
+Creating temporary file "C:\Users\Usuario\AppData\Local\Temp\RSP11A9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Primero_MFC.pdb" /debug /machine:I386 /out:"Debug/Primero_MFC.exe" /pdbtype:sept 
+".\Debug\MainFrm.obj"
+".\Debug\Primero_MFC.obj"
+".\Debug\Primero_MFCDoc.obj"
+".\Debug\Primero_MFCView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Primero_MFC.res"
+]
+Creating command line "link.exe @C:\Users\Usuario\AppData\Local\Temp\RSP11A9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MainFrm.cpp
+Primero_MFC.cpp
+Primero_MFCDoc.cpp
+Primero_MFCView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Primero_MFC.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

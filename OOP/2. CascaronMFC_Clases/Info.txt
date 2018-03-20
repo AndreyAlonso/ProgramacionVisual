@@ -1,0 +1,36 @@
+--------------------------------------------------------
+Clases:
+
+-> CFrameWnd:
+	Encapsula la funcionalidad de una ventana de marco 
+	de interfaz de documento único de Windows (SDI).
+
+	 Una ventana de marco es una ventana que enmarca 
+	 una aplicación.
+
+-> CClientDC:
+	 Se encarga de llamar a las funciones de Windows 
+	 GetDC en tiempo de construcción y ReleaseDC 
+	 en tiempo de destrucción.
+
+
+-------------------------------------------------------
+Tipos:
+-> BEGIN_MESSAGE_MAP:
+
+	 Utilice la macro BEGIN_MESSAGE_MAP para comenzar 
+	 la definición de su mapa de mensajes.
+
+	 BEGIN_MESSAGE_MAP( theClass, baseClass )
+
+
+	 Parámetros:
+
+	 *la clase:
+	 Especifica el nombre de la clase cuyo 
+	 mensaje es el mapa.
+
+	 *clase base:
+	 Especifica el nombre de la clase base de 
+	 theClass.
+------------------------------------------------------

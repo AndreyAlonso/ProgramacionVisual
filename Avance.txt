@@ -1,0 +1,135 @@
+Alummo:	Hector Andrey Hernandez Alonso
+Fecha: Lunes 28 de Agosto del 2017
+
+Entrega:
+
+SDK--------------------------------------
+
+1. Cascaron:
+2. Mensajes_Mouse:
+3. Coordenandas_Cursor:
+4. Editor_Figuras:
+
+
+SDK_TIPICO--------------------------------
+
+1. Primero_TIPICO:
+2. Mensajes_Tipico:
+3. Editor_Figuras_Tipico:
+
+Rev.
+	OK
+--------------------------------------------
+
+Fecha: Jueves 31 de Agosto del 2017
+
+Entrega:
+
+1. Editor_Figuras_Tipico:
+
+Rev.
+	OK
+
+
+-----------------------------------------
+
+Fecha: Lunes 04 de Septiembre del 2017
+
+Entrega:
+
+SDK_TIPICO:
+	1.PreEx1_Tipico_Pizarron:
+
+Rev.
+	OK
+
+------------------------------------------
+
+Fecha: Miercoles 06 de Septiembre del 2017
+
+Entrega:
+
+SDK_TIPICO:
+	Dialogo_Controles:
+	Botones_Tipico:
+
+Rev.
+	Agregar constantes a la info.
+	OK
+-----------------------------------------------
+Fecha: Miercoles 08 de Septiembre del 2017
+
+7. Tempo_tipico		Chafa hay que hacerlo caminar. De donde se de Click.
+8. Pelota_tipico	OK
+
+Rev.
+
+
+-----------------------------------------------
+
+Fecha: Lunes 11 de Septiembre del 2017
+
+Entrega:
+SDK_TIPICO:
+	Tempo_Tipico:
+	
+Rev.
+	OK
+--------------------------------------------------
+
+Fecha: Lunes 25 de Septiembre del 2017
+
+Entrega:
+
+SDK_TIPICO:
+	09. Lista_Num:		OK
+
+	Este programa realiza una lista y las añade a un comboBox mediante un DialogBox.
+	
+	10. PreEx2.1_Tipico_Combo_Decenas:  ESTE NO ES PRE_EXAMEN2.1 se llama Combos_Decenas.
+
+	Programa de listas de listas donde la lista principal genera la base
+	de numeros enteros y son añadidos en combos mediante una ventana y la ventana
+	se redimensiona segun el numero de combos.
+	
+Rev.
+	-Que corra n veces desde la opción de menu.
+	-Balancear los aleatorios.
+
+
+
+---------------------------------------------------------
+
+Fecha: Miercoles 27 de Septiembre del 2017
+
+Entrega:
+
+	10. Combo_Decenas:		Falta balancear nodos-aristas
+
+	11. PreEx2.1_Combo_Decenas: 	Falta balancear nodos-aristas
+
+	12. Grafo_Adoc:			OK
+
+	
+----------------------------------------------------------
+Fecha: Jueves 28 de Septiembre del 2017
+
+Entrega:
+
+	10. Combo_Decenas:		OK
+
+	11. PreEx2.1_Combo_Decenas:	OK
+
+----------------------------------------------------------
+
+Fecha: Lunes 02 de Octubre del 2017
+
+Entrega:
+	OOP:
+
+	1. Cascaron_MFC:
+
+	2. CascaronMFC_Clases:
+
+	3. Examen2_Editor_de_Textos:
+	

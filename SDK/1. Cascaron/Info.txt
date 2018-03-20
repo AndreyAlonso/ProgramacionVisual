@@ -1,0 +1,366 @@
+﻿|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+					              M   E   T   O   D   O   S
+
+------------------------------------------------------------- WindMain-----------------------------------------------------
+La función WinMain es llamada por el sistema como el punto de entrada inicial para una aplicación basada en Win32.
+
+			int WINAPI WinMain(
+				HINSTANCE hInstance,  // Handle a la instancia actual
+				HINSTANCE hPrevInstance,  // Handle a la instancia anterior
+				LPSTR lpCmdLine,      // Apuntador a la linea de comandos
+				int nCmdShow          // Mostrar el estado de la ventana
+			);
+Ejemplo:
+	SW_HIDE  ---------> Oculta la ventana y activa otra ventana.
+
+ --------------------------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------- LoadCursor-----------------------------------------------------
+ Esta funcion carga el recurso cursor de un archivo ejecutable asociado con la aplicacion.
+
+                    HCURSOR LoadCursor(
+  			HINSTANCE hInstance,  // handle a la instancia de la aplicacion
+  			LPCTSTR lpCursorName  // Nombre de la cadena del recurso o identificador del cursor
+ 		    );
+ Ejemplo:
+ 	IDC_CROSS --------------> Cruz
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------- GetStockObject-------------------------------------------------
+La función GetStockObject recupera un 'handle' en uno de los bolígrafos, pinceles, fuentes o paletas de stock predefinidos.
+
+			HGDIOBJ GetStockObject(int fnObject);      // Tipo de objeto Stock (valor).
+					  	   
+					
+
+Ejemplo:
+       BLACK_BRUSH ---------> Brocha Negra.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------RegisterClass--------------------------------------------------
+La función RegisterClass registra una clase de ventana para su uso posterior en llamadas a la función CreateWindow o 
+CreateWindowEx.
+
+			ATOM RegisterClass(CONST WNDCLASS *lpWndClass);   //Dirección de la estructura con datos de clase.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+----------------------------------------------------------CreateWindow----------------------------------------------------
+Crea una ventana superpuesta, emergente o secundaria. Especifica la clase de ventana, el título de la ventana, el estilo
+de la ventana y (opcionalmente) la posición inicial y el tamaño de la ventana. La función también especifica el padre o 
+propietario de la ventana, si lo hay, y el menú de la ventana.
+
+
+					HWND CreateWindow(
+					  LPCTSTR lpClassName,  // Apuntador al nombre de la clase registrada
+					  LPCTSTR lpWindowName, // Apuntador al nombre de la ventana
+					  DWORD dwStyle,        // Estilo de ventana
+					  int x,                // Posicion horizontal de la ventana
+					  int y,                // Posicion vertical de la ventana
+					  int nWidth,           // Ancho de la ventana
+					  int nHeight,          // Alto de la
+					  HWND hWndParent,      // handle a la ventana padre 
+					  HMENU hMenu,          // Identificador del menu o identificador de ventana secundaria
+					  HANDLE hInstance,     // handle a la instancia de la aplicacion
+					  LPVOID lpParam        // Apuntador a los datos de creacion de ventanas
+					);
+
+Ejemplo:
+		WS_MAXIMIZE  -----------------------> Crea una ventana que tiene un botón Maximizar.
+
+--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------ShowWindow------------------------------------------------------
+ Establece el estado de presentación de ventanas especificadas.
+
+
+					BOOL ShowWindow(
+					  	HWND hWnd,     // handle a la ventana
+					  	int nCmdShow   // muestra el estado de la ventana
+					);
+
+Ejemplo:
+		SW_MINIMIZE -----------------------> Minimiza la ventana especificada.
+--------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------UpadeteWindow--------------------------------------------------
+La función UpdateWindow actualiza el área de cliente de la ventana especificada enviando un mensaje WM_PAINT a la ventana
+si la región de actualización de la ventana no está vacía.
+
+					BOOL UpdateWindow(
+					  	HWND hWnd   // handle a la ventana
+					);
+--------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------GetMessage-----------------------------------------------------
+Devuelve el mensaje actual.
+
+					HRESULT GetMessage( LPMESSAGE FAR * ppmsg );
+
+ --------------------------------------------------------------------------------------------------------------------------
+
+
+ ---------------------------------------------------------TranslateMessage-------------------------------------------------
+ La función TranslateMessage traduce mensajes de clave virtual en mensajes de caracteres.
+
+ 				BOOL TranslateMessage( CONST MSG *lpMsg);	// Direccion de la estructura con mensaje
+ 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------DispatchMessage------------------------------------------------
+Envía un mensaje a un procedimiento de ventana. 
+Se utiliza para enviar un mensaje recuperado por la función GetMessage.
+
+					LONG DispatchMessage( CONST MSG *lpmsg );	// pointer to structure with message
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------BeginPaint-----------------------------------------------------
+La función BeginPaint prepara la ventana especificada para la pintura y rellena una estructura PAINTSTRUCT 
+con información sobre la pintura.
+
+			HDC BeginPaint(
+				HWND hwnd,  				// handle a la ventana
+				LPPAINTSTRUCT LPPAINTSTRUCT    // Apuntador a la estructura para informacion de pintura
+			);
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------GetClientRect----------------------------------------------------
+Recupera las coordenadas del área de cliente de una ventana. 
+Las coordenadas del cliente especifican las esquinas superior izquierda e inferior derecha del área cliente.
+
+			BOOL GetClientRect(
+					HWND hWnd,     		 // handle a la ventana
+					LPRECT lpRect    // Direccion de la estructura para las coordenadas del cliente
+			);
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------SetTextColor-----------------------------------------------------
+Establece el color de texto para el contexto de dispositivo especificado en el color especificado.
+
+					COLORREF SetTextColor(
+								HDC hdc,           // handle al contexto del dispositivo
+								COLORREF crColor   // Color de Texto
+					);
+ 
+
+--------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------TextOut--------------------------------------------------------
+Escribe una cadena de caracteres en la ubicación especificada, utilizando la fuente seleccionada actualmente, 
+el color de fondo y el color del texto.
+
+					BOOL TextOut(
+							  HDC hdc,           	// handle al contexto del dispositivo
+							  int nXStart,       	// Coordenanda x de la posicion inicial
+							  int nYStart,       	// Coordenada y de la posicion inicial
+							  LPCTSTR lpString,  	// Apuntador de la cadena
+							  int cbString       	// Numero de caracteres en la cadena
+					);
+
+--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------EndPaint--------------------------------------------------------
+La función EndPaint marca el final de la pintura en la ventana especificada.
+
+				BOOL EndPaint(
+					HWND hWnd,  				  // handle a la ventana
+					CONST PAINTSTRUCT *lpPaint  // Apuntador a la esctructura para datos de pintura           
+				);
+
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------PostQuitMessage---------------------------------------------------
+La función PostQuitMessage indica al sistema que un subproceso ha realizado una solicitud para finalizar (salir). 
+Normalmente se utiliza en respuesta a un mensaje WM_DESTROY.
+
+					VOID PostQuitMessage(
+					  			int nExitCode   		// Codigo de Salida
+					);
+
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------DefWindowProc-----------------------------------------------------
+Llama al procedimiento de ventana predeterminado para proporcionar procesamiento predeterminado para cualquier mensaje 
+de ventana que una aplicación no procesa.
+Esta función garantiza que se procese cada mensaje.
+
+					 LRESULT DefWindowProc(
+								  HWND hWnd,      	// handle a la ventana
+								  UINT Msg,       	// Identificador de mensaje
+								  WPARAM wParam,  	// Primer parametro del mensaje
+								  LPARAM lParam   	// Segundo parametro del mensaje
+					);
+
+--------------------------------------------------------------------------------------------------------------------------
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+					
+					H    A    N    D    L    E    S
+
+
+
+--------------------------------------------------------HINSTANCE---------------------------------------------------------
+Handle de instancia del programa.
+--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------HWND------------------------------------------------------------
+Handle a una ventana.
+--------------------------------------------------------------------------------------------------------------------------
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+				M 	E 	N 	S 	A 	J 	E 	S
+ 
+
+-------------------------------------------------------WM_PAINT-----------------------------------------------------------
+Una aplicación envía el mensaje WM_PAINT cuando el sistema u otra aplicación hace una solicitud para pintar 
+una parte de la ventana de una aplicación.
+
+--------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------WM_DESTROY----------------------------------------------------------
+El mensaje WM_DESTROY se envía cuando se está destruyendo una ventana.
+Se envía al procedimiento de ventana de la ventana que se destruye después de que la ventana se quita de la pantalla.
+
+
+--> No lleva parametros
+
+--------------------------------------------------------------------------------------------------------------------------
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+				T 		I 		P 		O 		S
+
+---------------------------------------------------------LRESULT----------------------------------------------------------
+Tipo utilizado para el valor de retorno de los procedimientos de ventana.
+--------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------CALLBACK---------------------------------------------------------
+Utilizar en lugar de FAR PASCAL en rutinas de devolución de llamada de aplicación, 
+como procedimientos de ventana y procedimientos de diálogo.
+--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------UINT------------------------------------------------------------
+Tipo de entero sin signo portátil cuyo tamaño está determinado por el entorno del host.
+--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------WPARAM----------------------------------------------------------
+Tipo utilizado para la declaración de wParam, el tercer parámetro de un procedimiento de Windows.
+--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------WINAPI----------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+Utilizar en lugar de FAR PASCAL en declaraciones API.
+-----------------------------------------------------------LPSTR----------------------------------------------------------
+Igual que LPSTR, excepto que se utiliza para apuntadores de cadena de sólo lectura.
+--------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------HDC-------------------------------------------------------------
+Devuelve un identificador(handle) proporcionado por el entorno operativo Microsoft Windows CE
+ al contexto de dispositivo de un objeto.
+--------------------------------------------------------------------------------------------------------------------------
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+
+			E 	S 	T 	R 	U 	C 	T 	U 	R 	A 	S
+
+
+-------------------------------------------------------------MSG----------------------------------------------------------
+La estructura MSG contiene información de mensaje de la cola de mensajes de un subproceso.
+
+						typedef struct tagMSG {     // msg 
+						    HWND   hwnd;     
+						    UINT   message; 
+						    WPARAM wParam; 
+						    LPARAM lParam; 
+						    DWORD  time; 
+						    POINT  pt; 
+						} MSG; 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------WNDCLASS---------------------------------------------------------
+La estructura WNDCLASS contiene los atributos de clase de ventana que están registrados por la función RegisterClass.
+
+						typedef struct _WNDCLASS { 
+						    UINT    style; 
+						    WNDPROC lpfnWndProc; 
+						    int     cbClsExtra; 
+						    int     cbWndExtra; 
+						    HANDLE  hInstance; 
+						    HICON   hIcon; 
+						    HCURSOR hCursor; 
+						    HBRUSH  hbrBackground; 
+						    LPCTSTR lpszMenuName; 
+						    LPCTSTR lpszClassName; 
+						} WNDCLASS; 
+
+Estilo de Miembros:
+
+Especifica el estilo de clase. 
+Estilos se pueden combinar utilizando el operador OR (|) a nivel de bits. 
+Ejemplo:
+	
+	CS_BYTEALIGNCLIENT  ---------> Alinea el área de cliente de Windows en el límite de bytes (en la dirección x). 
+					Este estilo afecta al ancho de la ventana ya su posición horizontal en la pantalla.
+
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------PAINTSTRUCT-------------------------------------------------------
+La estructura PAINTSTRUCT contiene información para una aplicación. 
+Esta información se puede utilizar para pintar el área de cliente de una ventana propiedad de esa aplicación.
+
+						typedef struct tagPAINTSTRUCT { 
+						    HDC  hdc; 
+						    BOOL fErase; 
+						    RECT rcPaint; 
+						    BOOL fRestore; 
+						    BOOL fIncUpdate; 
+						    BYTE rgbReserved[32]; 
+						} PAINTSTRUCT; 
+
+Miembro ejemplo:
+
+HDC -------> Handle(Manejo) a la pantalla DC para ser utilizado para la pintura.
+--------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------RECT----------------------------------------------------------
+La estructura RECT define las coordenadas de las esquinas superior izquierda e inferior derecha de un rectángulo.
+
+						typedef struct _RECT { 
+						    LONG left; 
+						    LONG top; 
+						    LONG right; 
+						    LONG bottom; 
+						} RECT; 
+
+Ejemplo:
+
+RECT rt;
+rt.left = 10;
+rt.top = 10;
+
+--------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------RGB----------------------------------------------------------
+La macro RGB selecciona un color rojo, verde, azul (RGB) basado en los argumentos suministrados y las capacidades 
+de color del dispositivo de salida.
+
+						COLORREF RGB(
+						  BYTE bRed,    // Componente de color Rojo
+						  BYTE bGreen,  // Componente de color Verde
+						  BYTE bBlue    // Componente de color Azul
+						);
+
+--------------------------------------------------------------------------------------------------------------------------
